@@ -11,7 +11,10 @@ export const metadata: Metadata = {
     },
   ],
 };
-import logo from "../../../public/assets/images/shortly/logo.svg";
+import rawLogo from "../../../public/assets/images/shortly/logo.svg";
+const logo = rawLogo as unknown as StaticImageData;
+import heroSectionImageRaw from "../../../public/assets/images/shortly/illustration-working.svg";
+const heroSectionImage = heroSectionImageRaw as unknown as StaticImageData;
 
 export default function ShortlyPage() {
   return (
